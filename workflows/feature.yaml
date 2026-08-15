@@ -1,0 +1,23 @@
+name: feature
+steps:
+  - name: requirements
+    primary: claude
+    fallback: [gemini]
+  - name: architecture
+    primary: claude
+    fallback: [gemini]
+  - name: implement
+    primary: codex
+    fallback: [claude]
+  - name: test
+    primary: codex
+    fallback: [claude]
+  - name: review
+    primary: claude
+    fallback: [gemini]
+  - name: fix
+    primary: codex
+    fallback: [claude]
+  - name: final_test
+    primary: codex
+    fallback: [claude]
