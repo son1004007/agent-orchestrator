@@ -1,5 +1,11 @@
 # AGENTS.md
 
+## Global AI Control
+
+When GitHub access is available, before substantive work read `son1004007/ai-agent-workflow-playbook/CONTROL.md`, then return here and follow this repository's orchestration rules. The global control defines shared discovery, Official-Source-First behavior and verification policy. **This repository remains the source of truth for the multi-agent orchestrator implementation and runtime behavior.**
+
+If the private global control is unavailable, continue from this file and repository evidence. Do not weaken tool, secret, approval or execution boundaries because the global control cannot be read.
+
 ## 목적
 
 이 저장소는 Codex, Claude Code, Gemini CLI를 하나의 Supervisor에서 오케스트레이션하기 위한 공통 규칙을 정의합니다.
