@@ -1,3 +1,5 @@
+> **2026-11-07 최신 사용자 조건:** ChatGPT Plus + Google AI Pro 구독을 활용하고 API 요금 청구는 허용하지 않습니다. Claude Code는 미구독이며 가입 여부는 추후 결정합니다. AGY 소비자 로그인은 Google 정책상 제3자 코딩 에이전트의 하위 실행기로 감싸지 마세요. 세 CLI의 개념적 역할 구분은 유지하되 자동 라우팅 구현 전 공식 인증·약관·샌드박스 경계부터 확인합니다. `docs/OPENCODE_GAP_AND_SUBSCRIPTION_POLICY.md` 및 `workflows/subscription-safe.yaml` 참고. OpenCode 소스 재사용 시 MIT license/copyright 보존. 테스트 없는 성공 주장 금지.
+
 # AGENTS.md
 
 ## Global AI Control
