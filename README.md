@@ -81,7 +81,7 @@ py -3.12 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -e .
 Copy-Item .env.example .env
-python -m orchestrator.supervisor workflows/feature.yaml "Spring Boot 로그인 기능 구현"
+python -m orchestrator.supervisor workflows/subscription-safe.yaml "Spring Boot 로그인 기능 구현" --dry-run
 ```
 
 각 CLI가 PATH에서 실행 가능해야 합니다.
