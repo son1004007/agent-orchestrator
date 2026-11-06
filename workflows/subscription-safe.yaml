@@ -1,0 +1,7 @@
+# Default: single native Codex CLI call. No paid API, Claude, or AGY fallback.
+# AGY must run independently in its supported native environment.
+name: subscription-safe
+steps:
+  - name: implementation
+    primary: codex
+    fallback: []
