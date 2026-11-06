@@ -1,5 +1,17 @@
 # Agent Orchestrator
 
+> **2026-11-07 subscription-only safety update:** ChatGPT Plus and Google AI Pro are subscribed; no model API charges are approved. Use `workflows/subscription-safe.yaml` for a single Codex native CLI call. `--dry-run` previews routes with zero LLM calls. Claude Code requires separate verified Pro/Max login and explicit local opt-in. AGY must run as a **separate officially supported native workflow**; Google consumer account access must not be wrapped inside this third-party supervisor. The legacy `workflows/feature.yaml` has Claude/Gemini primaries and now fails preflight by default. See [OpenCode comparison and subscription policy](docs/OPENCODE_GAP_AND_SUBSCRIPTION_POLICY.md). Model exit code 0 is not a tested feature.
+
+### 구독 사용 모드
+
+```powershell
+python -m orchestrator.supervisor workflows/subscription-safe.yaml "테스트할 개발 작업" --dry-run
+python -m orchestrator.supervisor workflows/subscription-safe.yaml "테스트할 개발 작업"
+```
+
+실제 로그인 상태·CLI 버전 확인이 필요하며 `artifacts/run-ledger/`에는 텍스트가 아닌 실행 메타데이터만 저장합니다. 기존 다중 벤더 워크플로우는 미검증 레거시 예시입니다.
+
+
 멀티 LLM 코딩 에이전트를 하나의 워크플로우에서 운영하기 위한 오케스트레이션 프로젝트입니다.
 
 ## 목표
